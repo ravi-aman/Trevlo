@@ -18,6 +18,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: firebase deployment
+        run: firebase deploy
+
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
